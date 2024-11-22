@@ -1,0 +1,52 @@
+{
+  "name": "SPIDER Pseudonymization",
+  "namespace": "SpiderPseudonymization",
+  "description": "REDCap module for SPIDER pseudonymization integration",
+  "authors": [
+    {
+      "name": "Alexander Ivanets",
+      "email": "aivanets@ukaachen.de",
+      "institution": "Uniklinik RWTH Aachen Department of Medical Informatics"
+    }
+  ],
+  "permissions": [
+    "redcap_save_record"
+  ],
+  "links": {
+    "project": [
+      {
+        "name": "SPIDER Configuration",
+        "icon": "fas fa-cog",
+        "url": "pages/config.php"
+      }
+    ]
+  },
+  "system-settings": [
+    {
+      "key": "spider_api_key",
+      "name": "SPIDER API Key",
+      "required": true,
+      "type": "text"
+    },
+    {
+      "key": "spider_api_url",
+      "name": "SPIDER API URL",
+      "required": true,
+      "type": "text"
+    }
+  ],
+  "project-settings": [
+    {
+      "key": "pseudonym_field",
+      "name": "REDCap Field for Pseudonym",
+      "required": true,
+      "type": "field-list"
+    },
+    {
+      "key": "enable_pseudonymization",
+      "name": "Enable Pseudonymization",
+      "required": true,
+      "type": "checkbox"
+    }
+  ]
+}
