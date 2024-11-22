@@ -1,4 +1,3 @@
-# README.md content structure:
 # REDCap SPIDER Integration Module
 
 ## Overview
