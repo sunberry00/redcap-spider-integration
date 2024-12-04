@@ -1,0 +1,18 @@
+{
+    "name": "SPIDER Integration External Module",
+    "namespace": "MyOrg\\MyModule",
+    "description": "Module provide integration with SPIDER",
+    "versions": [
+        {
+            "version": "0.1.0",
+            "php_version_min": "7.4",
+            "php_version_max": "8.1"
+        }
+    ],
+    "authors": [
+        {
+            "name": "Alexander Ivanets",
+            "email": "aivanets@ukaachen.de"
+        }
+    ]
+}
