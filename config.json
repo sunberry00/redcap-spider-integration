@@ -10,23 +10,9 @@
         }
     ],
     "permissions": [
-        "redcap_every_page_top",
         "redcap_data_entry_form"
     ],
     "project-settings": [
-        {
-            "key": "p12-certificate",
-            "name": "P12 Certificate File",
-            "type": "file",
-            "required": true,
-            "file-types": ["p12"]
-        },
-        {
-            "key": "p12-password",
-            "name": "P12 Certificate Password",
-            "type": "password",
-            "required": true
-        },
         {
             "key": "pseudonym-field",
             "name": "REDCap Field Variable Name",
@@ -35,11 +21,19 @@
             "default": "pseudonym_field"
         },
         {
-            "key": "rest-service-url",
-            "name": "REST Service URL",
-            "type": "text",
-            "required": true,
-            "default": "https://example.com/api/pseudonym"
+            "key": "p12-certificate",
+            "name": "P12 Certificate File",
+            "type": "file",
+            "required": false,
+            "file-types": ["p12"],
+            "description": "Upload your .p12 certificate file for SPIDER"
+        },
+        {
+            "key": "p12-password",
+            "name": "P12 Certificate Password",
+            "type": "password",
+            "required": false,
+            "description": "Enter the password for your .p12 certificate"
         }
     ]
 }
